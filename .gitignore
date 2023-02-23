@@ -1,4 +1,6 @@
 .idea
+.venv
+py
 .DS_Store
 !.gitkeep
 /essays

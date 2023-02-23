@@ -17,15 +17,17 @@ count:
 
 venv:
 		@echo "🐍 Creating a safe place for a Python... "
-		mkdir essays
+		mkdir -p essays
 		python3 -m venv .venv
-		source "./.venv/bin/activate"
-		pip3 install --upgrade pip
-		pip3 install -r requirements.txt
+		@echo "Execute:"
+		@echo "source .venv/bin/activate"
+		@echo "pip install -r requirements.txt"
+#		pip3 install --upgrade pip
+#		pip3 install -r requirements.txt
 
 dependencies: # for MacOS
-		brew install python@3
-		brew install --build-from-source pandoc
+#       brew install python@3
+		brew install pandoc
 		brew install --cask calibre
 
 fetch:	
